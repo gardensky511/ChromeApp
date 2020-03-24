@@ -1,12 +1,14 @@
 const body = document.querySelector("body");
+const wrap = document.querySelector(".wrap");
 
 const IMG_NUM = 20;
 
 function paintImg(imgNumber) {
   const image = new Image();
-  image.src = `/img/${imgNumber + 1}.jpg`;
-  image.classList.add("bgImage");
-  body.prepend(image);
+  // const image.src = `/img/${imgNumber + 1}.jpg`;
+  // image.classList.add("bgImage");
+  // body.prepend(image);
+  wrap.style.backgroundImage = `url(./img/${imgNumber + 1}.jpg)`;
 }
 
 function genRandom() {
