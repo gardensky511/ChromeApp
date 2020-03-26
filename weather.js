@@ -10,7 +10,7 @@ function getWeather(lat, lon) {
       return response.json();
     })
     .then(function(json) {
-      console.log(json);
+      // console.log(json);
       const sky = json.weather[0].description;
       const place = json.name;
       weather.innerText = `${sky.toUpperCase()} in ${place}`;

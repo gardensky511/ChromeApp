@@ -109,19 +109,19 @@ body {
 
 .js-form input {
   border: 1px solid #d4d4d4;
-  width: 25vw;
+  width: 30vw;
   padding: 5px;
   font-size: 1rem;
   box-sizing: border-box;
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   .js-form input {
-    width: 30vw;
+    width: 50vw;
   }
 }
 @media (max-width: 480px) {
   .js-form input {
-    width: 60vw;
+    width: 70vw;
   }
   .js-form {
     padding: 30px 0 20px 0;
@@ -134,19 +134,19 @@ body {
 
 .js-toDoForm input {
   border: 1px solid #d4d4d4;
-  width: 25vw;
+  width: 30vw;
   padding: 5px;
   font-size: 1rem;
   box-sizing: border-box;
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   .js-toDoForm input {
-    width: 30vw;
+    width: 50vw;
   }
 }
 @media (max-width: 480px) {
   .js-toDoForm input {
-    width: 60vw;
+    width: 70vw;
   }
   .js-toDoForm {
     padding: 0;
@@ -172,25 +172,29 @@ body {
 }
 
 .js-toDoList li {
-  /* border: 1px solid; */
+  border: 1px solid;
   margin: 10px auto;
-  width: 25vw;
-  padding: 10px 10px;
+  width: 30vw;
+  padding: 5px 40px 5px 10px;
   background-color: rgba(1, 1, 1, 0.5);
   box-sizing: border-box;
   position: relative;
+  line-height: 1.5;
 }
 
 .js-toDoList li button {
-  /* border: 1px solid green; */
+  /* border: 5px solid green; */
   position: absolute;
   right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .js-toDoList li {
-    width: 30vw;
+    width: 50vw;
     position: relative;
+    padding: 10px 40px 10px 10px;
   }
   .js-toDoList li button {
     border: 1px solid #d4d4d4;
@@ -204,7 +208,8 @@ body {
   }
 
   .js-toDoList li {
-    width: 60vw;
+    width: 70vw;
+    padding: 10px 40px 10px 10px;
   }
   .js-toDoList li button {
     border: 1px solid #d4d4d4;

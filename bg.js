@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const wrap = document.querySelector(".wrap");
 
-const IMG_NUM = 20;
+const IMG_NUM = 22;
 
 function paintImg(imgNumber) {
   const image = new Image();
